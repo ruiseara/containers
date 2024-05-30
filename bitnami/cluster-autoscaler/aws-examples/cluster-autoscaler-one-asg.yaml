@@ -26,6 +26,11 @@ spec:
             requests:
               cpu: 100m
               memory: 300Mi
+            securityContext: 
+              allowPrivilegeEscalation: false
+              capabilities:
+              drop:
+                - All
           command:
             - cluster-autoscaler
             - --v=4
