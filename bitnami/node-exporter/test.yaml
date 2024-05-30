@@ -22,3 +22,6 @@ spec:
         name: node-exporter
         securityContext:
           allowPrivilegeEscalation: false
+          runAsNonRoot: true
+          - capabilities:
+            drop: add
