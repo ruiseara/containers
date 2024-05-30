@@ -21,9 +21,10 @@ spec:
           name: cluster-autoscaler
           securityContext: 
             allowPrivilegeEscalation: false
+            runAsNonRoot: true
             capabilities:
-            drop:
-              - All
+              drop:
+                - All
           resources:
             limits:
               cpu: 100m
