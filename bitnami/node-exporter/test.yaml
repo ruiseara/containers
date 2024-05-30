@@ -18,7 +18,6 @@ spec:
         app: test-node-exporter
     spec:
       containers:
-      - image: bitnami/node-exporter
+      - image: bitnami/node-exporter Set spec.{containers, initContainers}.securityContext.allowPrivilegeEscalation to false
         name: node-exporter
-        Set spec.{containers, initContainers}.securityContext.allowPrivilegeEscalation to false
-        Set securityContext.runAsNonRoot to true
+
