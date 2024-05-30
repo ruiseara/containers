@@ -20,11 +20,11 @@ spec:
         - image: bitnami/cluster-autoscaler:latest
           name: cluster-autoscaler
         securityContext: 
-          allowPrivilegeEscalation: false
           runAsNonRoot: true
           capabilities:
             drop:
               - All
+          allowPrivilegeEscalation: false
           resources:
             limits:
               cpu: 100m
