@@ -20,9 +20,9 @@ spec:
         - image: bitnami/cluster-autoscaler:latest        
           name: cluster-autoscaler
         securityContext:
+          runAsNonRoot: true
           runAsUSer: 10001
           readOnlyRootFilesystem: true
-          runAsNonRoot: true
           capabilities:
             drop:
               - All
