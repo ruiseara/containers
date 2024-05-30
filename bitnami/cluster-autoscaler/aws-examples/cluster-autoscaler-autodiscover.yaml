@@ -19,6 +19,10 @@ spec:
       containers:
         - image: bitnami/cluster-autoscaler:latest
           name: cluster-autoscaler
+          securityContext: 
+            capabilities:
+              drop:
+                - All
           resources:
             limits:
               cpu: 100m
