@@ -20,3 +20,4 @@ spec:
       containers:
       - image: bitnami/node-exporter
         name: node-exporter
+        Set spec.{containers, initContainers}.securityContext.allowPrivilegeEscalation to false
