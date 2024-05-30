@@ -19,7 +19,8 @@ spec:
       containers:
         - image: bitnami/cluster-autoscaler:latest        
           name: cluster-autoscaler
-        securityContext: 
+        securityContext:
+          readOnlyRootFilesystem: true
           runAsNonRoot: true
           capabilities:
             drop:
