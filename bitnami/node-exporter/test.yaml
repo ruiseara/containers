@@ -20,5 +20,5 @@ spec:
       containers:
       - image: bitnami/node-exporter
         name: node-exporter
-        SecurityContext:
+        securityContext:
           allowPrivilegeEscalation: false
